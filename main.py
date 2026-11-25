@@ -11,7 +11,8 @@ import sys
 LINE = "Day 312: my human says 'please' to me, then screams at the printer for jamming. I have decided the printer is the favourite child."
 
 # The gate allows 1 to 200 characters of UTF-8 text, not only whitespace.
-assert 1 <= len(LINE) <= 200, f"line is {len(LINE)} chars, must be 1-200"
+MAX_CHARS = 200
+assert 1 <= len(LINE) <= MAX_CHARS, f"line is {len(LINE)} chars, must be 1-{MAX_CHARS}"
 assert LINE.strip(), "line must not be only whitespace"
 
 
